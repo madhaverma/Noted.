@@ -7,7 +7,10 @@ import Note from "./model/Note.js";
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: process.env.CLIENT_URL
+  origin: [
+    'https://noted-8rwxnu95x-madhavs-projects-28616a31.vercel.app',
+    'http://localhost:5173'
+  ]
 }));
 app.use(express.json());
 
