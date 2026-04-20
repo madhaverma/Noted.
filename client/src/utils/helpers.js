@@ -1,4 +1,4 @@
-export const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api/notes";
+ export const API = `${import.meta.env.VITE_API_URL}/api/notes` || "http://localhost:5000/api/notes";
 
 export const fmt = (iso) => {
   if (!iso) return "";
